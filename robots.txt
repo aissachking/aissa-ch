@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aissachking.github.io/aissa-ch/sitemap.xml
