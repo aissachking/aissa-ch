@@ -24,13 +24,18 @@
 <link rel="apple-touch-icon" href="img/icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Alexandria:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="styles.css">
-<link rel="preload" as="image" href="img/zad/home.webp" type="image/webp">
+<link rel="stylesheet" href="fx.css">
+<link rel="preload" as="image" href="img/portrait-1200.webp" type="image/webp">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "زاد المسلم", "alternateName": "Zad Al-Muslim", "description": "تطبيق خفيف يعمل بالكامل بدون إنترنت، يساعدك على المحافظة على الصلوات الخمس في المسجد، مع الأذكار والمصحف وإحصائيات تتنافس فيها مع نفسك. صدقة جارية، مجاني وبدون إعلانات.", "applicationCategory": "LifestyleApplication", "operatingSystem": "Android", "author": {"@type": "Person", "name": "Aissa CH", "url": "https://aissachking.github.io/aissa-ch/"}, "url": "https://aissachking.github.io/aissa-ch/zad/", "image": "https://aissachking.github.io/aissa-ch/img/zad/home.webp", "downloadUrl": "https://zad-al-muslim.onrender.com", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "DZD"}}</script>
 </head>
 <body style="overflow:hidden">
 <a class="skip" href="#work" id="skip">تخطَّ إلى الأعمال</a>
+<div class="fx-loader" aria-hidden="true">
+  <img src="img/emblem.webp" alt="" width="128" height="107">
+  <div><div class="fx-count latin" id="fxCount">0</div><div class="fx-lbar"><i id="fxBar"></i></div></div>
+</div>
 <div class="ambient" aria-hidden="true"><i></i><i></i><i></i></div>
 
 <header class="nav gutter" id="nav">
@@ -72,22 +77,71 @@
 </div>
 
 <main id="main">
-  <section class="hero gutter" id="top">
-    <div class="wrap hero-grid">
+  <section class="fx-hero" id="top">
+    <div class="fx-frame" aria-hidden="true"></div>
+    <div class="fx-word" aria-hidden="true"><div class="fx-w latin" id="heroWord">AISSACH</div></div>
+    <i class="fx-orb s" data-d="40" style="width:14px;height:14px;top:24%;left:14%"></i><i class="fx-orb b" data-d="-30" style="width:110px;height:110px;top:58%;left:8%"></i><i class="fx-orb s" data-d="-50" style="width:10px;height:10px;top:34%;left:84%"></i><i class="fx-orb b" data-d="25" style="width:140px;height:140px;top:16%;left:72%"></i><i class="fx-orb s" data-d="60" style="width:20px;height:20px;top:66%;left:88%"></i>
+    <div class="fx-portrait"><div class="fx-ptilt" id="ptilt"><img src="img/portrait-1200.webp" srcset="img/portrait-700.webp 572w, img/portrait-1200.webp 981w" sizes="(max-width:760px) 60vw, 680px" alt="Aissa CH" width="981" height="1200" fetchpriority="high"></div></div>
+    <div class="fx-hint latin" aria-hidden="true">SCROLL ↓</div>
+    <div class="fx-hb">
       <div class="hero-text">
         <span class="eyebrow" data-t="place">غرداية · الجزائر</span>
         <h1 id="h1">من الفكرة<br><em>إلى تطبيق في يدك</em></h1>
-        <p class="intro" data-t="lead">أصمّم تطبيقات أندرويد ومواقع ويب عربية تحلّ مشاكل حقيقية: للمسلم في صلاته، للطفل في قراءته، وللتاجر والفريق في عمله.</p>
         <div class="ctas" id="heroCtas">
           <a class="btn gold" href="#work"><span data-t="cta">اكتشف التطبيقات</span><svg class="fl" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
           <button class="btn glass" type="button" data-request="">اطلب خدمة</button>
         </div>
-        <div class="who"><img src="img/avatar.webp" alt="" width="48" height="48"><div><b>Aissa CH</b><small class="type" id="type">Developer</small></div></div>
       </div>
-      <div class="stage" id="stage" aria-hidden="true"><div class="rig" id="rig"><div class="halo"></div>
-      <div class="p-c"><div class="ph"><div class="scr done"><span class="url">darli-dz.netlify.app</span><img src="img/darli/home.webp" alt="دارلي DARLI DZ — 1" decoding="async" onload="this.classList.add('ok');this.parentNode.classList.add('done')" onerror="this.parentNode.classList.add('done')" class="ok"></div></div></div>
-      <div class="p-b"><div class="ph"><div class="scr done"><img src="img/rehlat/home.webp" alt="رحلة القارئ — 1" decoding="async" onload="this.classList.add('ok');this.parentNode.classList.add('done')" onerror="this.parentNode.classList.add('done')" class="ok"></div></div></div>
-      <div class="p-a"><div class="ph"><div class="scr done"><img src="img/zad/home.webp" alt="زاد المسلم — 1" decoding="async" onload="this.classList.add('ok');this.parentNode.classList.add('done')" onerror="this.parentNode.classList.add('done')" class="ok"></div></div></div></div></div>
+      <div class="who"><img src="img/avatar.webp" alt="" width="48" height="48"><div><b>Aissa CH</b><small class="type" id="type">Developer</small></div></div>
+    </div>
+  </section>
+
+  <div class="fx-marquee" aria-hidden="true"><div class="fx-mskew" id="mskew"><div class="fx-mtrack latin">
+    <span>Developer</span><span>Photographe</span><span>Réparateur de mobile</span><span>Ghardaïa</span>
+    <span>Developer</span><span>Photographe</span><span>Réparateur de mobile</span><span>Ghardaïa</span>
+  </div></div></div>
+
+  <section class="fx-intro gutter"><div class="wrap"><p class="fx-lead" id="lead" data-t="lead">أصمّم تطبيقات أندرويد ومواقع ويب عربية تحلّ مشاكل حقيقية: للمسلم في صلاته، للطفل في قراءته، وللتاجر والفريق في عمله.</p></div></section>
+
+  <section class="fx-show" id="showcase">
+    <div class="fx-wipe" id="sWipe" aria-hidden="true"></div>
+    <div class="fx-frame" aria-hidden="true"></div>
+    <div class="fx-word" aria-hidden="true"><div class="fx-w latin" id="sWord"></div></div>
+    <i class="fx-orb s" data-d="40" style="width:14px;height:14px;top:24%;left:14%"></i><i class="fx-orb b" data-d="-30" style="width:110px;height:110px;top:58%;left:8%"></i><i class="fx-orb s" data-d="-50" style="width:10px;height:10px;top:34%;left:84%"></i><i class="fx-orb b" data-d="25" style="width:140px;height:140px;top:16%;left:72%"></i><i class="fx-orb s" data-d="60" style="width:20px;height:20px;top:66%;left:88%"></i>
+    <div class="fx-pwrap"><div class="fx-pw" id="sPw"><div class="fx-tilt" id="sTilt"><div class="fx-float"><div class="fx-phone"><div><img id="sImg" src="img/zad/home.webp" alt="" decoding="async"></div></div></div></div></div></div>
+    <div class="fx-st"><span class="eyebrow" id="sEy">أعمالي</span><span class="fx-chip" id="sChip"></span></div>
+    <div class="fx-sb">
+      <div class="fx-info">
+        <div class="row"><div class="lg"><img id="sLogo" src="img/zad/logo.webp" alt="" width="56" height="56"></div><h3 id="sName"></h3></div>
+        <p id="sShort"></p>
+        <div class="fx-acts" id="sActs"></div>
+      </div>
+      <div class="fx-sw">
+        <button class="fx-arrow" type="button" id="sPrev"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+        <div class="fx-idx latin" id="sIdx">01 / 06</div>
+        <div class="fx-dots" id="sDots"></div>
+        <button class="fx-arrow" type="button" id="sNext"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="fx-story" id="skills">
+    <div class="fx-stick">
+      <div class="fx-bigbg latin" id="storyBg" aria-hidden="true">CREATE · CAPTURE · REPAIR</div>
+      <div class="fx-glow" aria-hidden="true"></div>
+      <div class="fx-ring" style="width:60vmin;height:60vmin" aria-hidden="true"></div>
+      <div class="fx-ring" style="width:86vmin;height:86vmin" aria-hidden="true"></div>
+      <div class="fx-ring" style="width:116vmin;height:116vmin" aria-hidden="true"></div>
+      <span class="eyebrow fx-story-ey" id="storyEy">ماذا أفعل؟</span>
+      <div class="fx-vis" aria-hidden="true">
+        <div class="fx-v"><div class="stage" id="stage"><div class="rig" id="rig"></div></div></div>
+        <div class="fx-v"><div class="photo"><img src="img/camera-700.webp" alt="" width="700" height="467" loading="lazy"></div></div>
+        <div class="fx-v"><div class="tool"><svg><use href="#i-tool"/></svg></div></div>
+      </div>
+      <div class="fx-feat"><div class="n latin">01</div><h3></h3><p></p></div>
+      <div class="fx-feat"><div class="n latin">02</div><h3></h3><p></p></div>
+      <div class="fx-feat"><div class="n latin">03</div><h3></h3><p></p></div>
+      <div class="fx-prog" aria-hidden="true"><i id="storyProg"></i></div>
     </div>
   </section>
 
@@ -106,19 +160,19 @@
           <h3>زاد المسلم</h3>
           <p class="lead">تطبيق خفيف يعمل بالكامل بدون إنترنت، يساعدك على المحافظة على الصلوات الخمس في المسجد، مع الأذكار والمصحف وإحصائيات تتنافس فيها مع نفسك. صدقة جارية، مجاني وبدون إعلانات.</p>
           <div style="margin-top:16px"><div class="tags"><span class="tag">Kotlin</span><span class="tag">Jetpack Compose</span><span class="tag">Room</span><span class="tag">WorkManager</span></div></div>
-          <div class="ctas"><button class="btn glass" type="button" data-open="zad">التفاصيل<svg class="fl" aria-hidden="true"><use href="#i-arrow"></use></svg></button><a class="btn gold " href="https://zad-al-muslim.onrender.com" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-dl"></use></svg>تحميل</a></div>
+          <div class="ctas"><button class="btn glass" type="button" data-open="zad">التفاصيل<svg class="fl" aria-hidden="true"><use href="#i-arrow"></use></svg></button><a class="btn gold" href="https://zad-al-muslim.onrender.com" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-dl"></use></svg>تحميل</a></div>
         </div>
-        <div class="trio"><div class="ph"><div class="scr done"><img src="img/zad/prayers.webp" alt="زاد المسلم — 2" loading="lazy" decoding="async" onload="this.classList.add('ok');this.parentNode.classList.add('done')" onerror="this.parentNode.classList.add('done')" class="ok"></div></div><div class="ph"><div class="scr done"><img src="img/zad/home.webp" alt="زاد المسلم — 1" loading="lazy" decoding="async" onload="this.classList.add('ok');this.parentNode.classList.add('done')" onerror="this.parentNode.classList.add('done')" class="ok"></div></div><div class="ph"><div class="scr done"><img src="img/zad/mushaf.webp" alt="زاد المسلم — 4" loading="lazy" decoding="async" onload="this.classList.add('ok');this.parentNode.classList.add('done')" onerror="this.parentNode.classList.add('done')" class="ok"></div></div></div>
+        <div class="trio"><div class="ph"><div class="scr"><img src="img/zad/prayers.webp" alt="زاد المسلم — 2" loading="lazy" decoding="async" onload="this.classList.add('ok');this.parentNode.classList.add('done')" onerror="this.parentNode.classList.add('done')"></div></div><div class="ph"><div class="scr done"><img src="img/zad/home.webp" alt="زاد المسلم — 1" loading="lazy" decoding="async" onload="this.classList.add('ok');this.parentNode.classList.add('done')" onerror="this.parentNode.classList.add('done')" class="ok"></div></div><div class="ph"><div class="scr"><img src="img/zad/mushaf.webp" alt="زاد المسلم — 4" loading="lazy" decoding="async" onload="this.classList.add('ok');this.parentNode.classList.add('done')" onerror="this.parentNode.classList.add('done')"></div></div></div>
       </article></div>
       <div class="grid" id="grid"><article class="card rv" style="--c:#E2A33A">
-      <div class="media"><div class="ph"><div class="scr done"><img src="img/rehlat/home.webp" alt="رحلة القارئ — 1" loading="lazy" decoding="async" onload="this.classList.add('ok');this.parentNode.classList.add('done')" onerror="this.parentNode.classList.add('done')" class="ok"></div></div><div class="ph"><div class="scr done"><img src="img/rehlat/treasures.webp" alt="رحلة القارئ — 2" loading="lazy" decoding="async" onload="this.classList.add('ok');this.parentNode.classList.add('done')" onerror="this.parentNode.classList.add('done')" class="ok"></div></div></div>
+      <div class="media"><div class="ph"><div class="scr"><img src="img/rehlat/home.webp" alt="رحلة القارئ — 1" loading="lazy" decoding="async" onload="this.classList.add('ok');this.parentNode.classList.add('done')" onerror="this.parentNode.classList.add('done')"></div></div><div class="ph"><div class="scr"><img src="img/rehlat/treasures.webp" alt="رحلة القارئ — 2" loading="lazy" decoding="async" onload="this.classList.add('ok');this.parentNode.classList.add('done')" onerror="this.parentNode.classList.add('done')"></div></div></div>
       <div class="body">
         <div class="top"><div class="logo" style="--c:#E2A33A;background:#1E5A48"><img src="img/rehlat/logo.webp" alt="" width="96" height="96" loading="lazy"></div><div><h3>رحلة القارئ</h3><div class="badges"><span class="badge live">منشور</span></div></div></div>
         <p class="desc">قصص الصحابة لأطفالنا، من مدينة إلى مدينة حتى القصر.</p>
         <div class="tags"><span class="tag">HTML</span><span class="tag">JavaScript</span><span class="tag">Android WebView</span></div>
         <div class="acts"><button class="btn glass sm" type="button" data-open="rehlat">التفاصيل<svg class="fl" aria-hidden="true"><use href="#i-arrow"></use></svg></button><a class="btn gold sm" href="https://rehlat-alqari.onrender.com" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-dl"></use></svg>تحميل</a></div>
       </div></article><article class="card rv" style="--c:#F2A23A">
-      <div class="media"><div class="ph"><div class="scr done"><img src="img/tashkila/pitch.webp" alt="تشكيلة — 1" loading="lazy" decoding="async" onload="this.classList.add('ok');this.parentNode.classList.add('done')" onerror="this.parentNode.classList.add('done')" class="ok"></div></div><div class="ph"><div class="scr done"><img src="img/tashkila/setup.webp" alt="تشكيلة — 2" loading="lazy" decoding="async" onload="this.classList.add('ok');this.parentNode.classList.add('done')" onerror="this.parentNode.classList.add('done')" class="ok"></div></div></div>
+      <div class="media"><div class="ph"><div class="scr"><img src="img/tashkila/pitch.webp" alt="تشكيلة — 1" loading="lazy" decoding="async" onload="this.classList.add('ok');this.parentNode.classList.add('done')" onerror="this.parentNode.classList.add('done')"></div></div><div class="ph"><div class="scr"><img src="img/tashkila/setup.webp" alt="تشكيلة — 2" loading="lazy" decoding="async" onload="this.classList.add('ok');this.parentNode.classList.add('done')" onerror="this.parentNode.classList.add('done')"></div></div></div>
       <div class="body">
         <div class="top"><div class="logo" style="--c:#F2A23A;background:#101614"><img src="img/tashkila/logo.webp" alt="" width="96" height="96" loading="lazy"></div><div><h3>تشكيلة</h3><div class="badges"><span class="badge dev">قيد التطوير</span></div></div></div>
         <p class="desc">فريقان متوازنان لمباراة الحومة، في ثوانٍ.</p>
@@ -138,13 +192,13 @@
         <p class="desc">منصة متكاملة لفريق تصوير الأعراس: حجوزات، فريق، وأسعار.</p>
         <div class="tags"><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">PostgreSQL</span><span class="tag">Android WebView</span><span class="tag">Render</span></div>
         <div class="acts"><button class="btn glass sm" type="button" data-open="visionpro">التفاصيل<svg class="fl" aria-hidden="true"><use href="#i-arrow"></use></svg></button><a class="btn line sm" href="https://wa.me/213668069475?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D8%A7%D9%8B%20%D9%85%D8%AB%D9%84%20VISION%20Pro" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"></use></svg>اطلب مثله</a></div>
-      </div></article><article class="card rv" style="--c:#E5383B">
-      <div class="media"><div class="ph"><div class="scr"><img src="img/elzaime/home.webp" alt="الزعيم تيليكوم — 1" loading="lazy" decoding="async" onload="this.classList.add('ok');this.parentNode.classList.add('done')" onerror="this.parentNode.classList.add('done')"></div></div></div>
+      </div></article><article class="card rv" style="--c:#5CC9A7">
+      <div class="media"><div class="ph"><div class="scr"><img src="img/tasli7/home.webp" alt="تصليح Tasli7 — 1" loading="lazy" decoding="async" onload="this.classList.add('ok');this.parentNode.classList.add('done')" onerror="this.parentNode.classList.add('done')"></div></div><div class="ph"><div class="scr"><img src="img/tasli7/repairs.webp" alt="تصليح Tasli7 — 2" loading="lazy" decoding="async" onload="this.classList.add('ok');this.parentNode.classList.add('done')" onerror="this.parentNode.classList.add('done')"></div></div></div>
       <div class="body">
-        <div class="top"><div class="logo" style="--c:#E5383B;background:#3E1013"><img src="img/elzaime/logo.webp" alt="" width="96" height="96" loading="lazy"></div><div><h3>الزعيم تيليكوم</h3><div class="badges"><span class="badge done">مكتمل</span><span class="badge priv"><svg aria-hidden="true"><use href="#i-lock"></use></svg>خاص بعميل</span></div></div></div>
-        <p class="desc">تسيير ورشة تصليح الهواتف من الاستلام إلى التسليم.</p>
-        <div class="tags"><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">PostgreSQL</span><span class="tag">Android WebView</span><span class="tag">Docker</span></div>
-        <div class="acts"><button class="btn glass sm" type="button" data-open="elzaime">التفاصيل<svg class="fl" aria-hidden="true"><use href="#i-arrow"></use></svg></button><a class="btn line sm" href="https://wa.me/213668069475?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D8%A7%D9%8B%20%D9%85%D8%AB%D9%84%20%D8%A7%D9%84%D8%B2%D8%B9%D9%8A%D9%85%20%D8%AA%D9%8A%D9%84%D9%8A%D9%83%D9%88%D9%85" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"></use></svg>اطلب مثله</a></div>
+        <div class="top"><div class="logo" style="--c:#5CC9A7;background:#2B2B2B"><img src="img/tasli7/logo.webp" alt="" width="96" height="96" loading="lazy"></div><div><h3>تصليح Tasli7</h3><div class="badges"><span class="badge live">منشور</span></div></div></div>
+        <p class="desc">سيّر محل تصليح الهواتف من هاتفك، من الاستلام إلى التسليم.</p>
+        <div class="tags"><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">PostgreSQL</span><span class="tag">Android WebView</span><span class="tag">Render</span></div>
+        <div class="acts"><button class="btn glass sm" type="button" data-open="tasli7">التفاصيل<svg class="fl" aria-hidden="true"><use href="#i-arrow"></use></svg></button><a class="btn gold sm" href="downloads/Tasli7-3.1.0.apk" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-dl"></use></svg>تحميل</a></div>
       </div></article></div>
     </div>
   </section>
@@ -167,6 +221,7 @@
   </section>
 
   <section class="contact gutter" id="contact">
+    <div class="fx-cta-title latin" aria-hidden="true"><span class="row">Let's</span><span class="row">Talk</span></div>
     <div class="wrap cta-card">
       <div>
         <h2 data-t="ctaH">لديك فكرة؟ لنحوّلها إلى مشروع.</h2>
@@ -234,7 +289,7 @@
         </div>
       </div></div>
       <div class="wrap nextp gutter">
-        <button type="button" data-open="elzaime"><small>السابق</small><b>الزعيم تيليكوم</b></button>
+        <button type="button" data-open="tasli7"><small>السابق</small><b>تصليح Tasli7</b></button>
         <button type="button" data-open="rehlat"><small>التالي</small><b>رحلة القارئ</b></button>
       </div></div>
 
@@ -272,6 +327,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
 <script src="data.js" defer></script>
 <script src="app.js" defer></script>
-<script>if("serviceWorker" in navigator){addEventListener("load",()=>navigator.serviceWorker.register("../sw.js").catch(()=>{}))}</script>
+<script src="vendor/motion.js" defer></script>
+<script src="fx.js" defer></script>
+<script>if("serviceWorker" in navigator){addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}))}</script>
 </body>
 </html>

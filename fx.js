@@ -25,7 +25,7 @@
                "Je filme mariages et événements avec l'équipe VISION Pro.",
                "Réparation et entretien de téléphones : je les connais de l'intérieur."] }
   };
-  const WORD = { zad: "ZAD", rehlat: "RIHLA", tashkila: "TASHKILA", darli: "DARLI", visionpro: "VISION", elzaime: "ZAIME" };
+  const WORD = { zad: "ZAD", rehlat: "RIHLA", tashkila: "TASHKILA", darli: "DARLI", visionpro: "VISION", tasli7: "TASLI7" };
 
   /* ---------- helpers ---------- */
   function split(el, text, goldFrom = 99) {
@@ -218,7 +218,7 @@
     heroChars.forEach(c => c.style.transform = "translateY(110%)");
     $(".fx-portrait img").style.opacity = 0;
     const seen = (() => { try { return sessionStorage.getItem("fxSeen"); } catch (e) { return 1; } })();
-    if (loader && !seen && !location.hash) {
+    if (loader && !seen && !location.hash && !document.documentElement.dataset.app) {
       document.body.style.overflow = "hidden";
       await M.animate(0, 100, { duration: 1.7, ease: [.65, 0, .35, 1], onUpdate: v => { $("#fxCount").textContent = Math.round(v); $("#fxBar").style.transform = `scaleX(${v / 100})`; } });
       await M.animate(loader, { clipPath: ["inset(0 0 0% 0)", "inset(0 0 100% 0)"] }, { duration: .9, ease });

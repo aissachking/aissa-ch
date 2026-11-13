@@ -210,18 +210,18 @@ window.APPS = [
     }
   },
   {
-    id: "elzaime", type: "client", status: "done", kind: "private", color: "#E5383B",
-    logo: "img/elzaime/logo.webp", logoBg: "#3E1013",
+    id: "tasli7", type: "app", status: "live", kind: "apk", color: "#5CC9A7",
+    url: "downloads/Tasli7-3.1.0.apk", logo: "img/tasli7/logo.webp", logoBg: "#2B2B2B",
     frame: "phone",
-    shots: ["img/elzaime/home.webp"],
-    tech: ["Node.js", "Express", "PostgreSQL", "Android WebView", "Docker"],
-    info: { ar: ["تطبيق أندرويد", "نظام ويب", "صلاحيات للفريق"], fr: ["App Android", "Système web", "Rôles et accès"] },
-    name: { ar: "الزعيم تيليكوم", fr: "EL ZAIME TELECOM" },
-    short: { ar: "تسيير ورشة تصليح الهواتف من الاستلام إلى التسليم.", fr: "Gérer un atelier de réparation, du dépôt à la remise." },
-    long: { ar: "نظام لمحلات تصليح الهواتف: يسجّل الأجهزة عند استلامها بوصل، يتابع حالة كل تصليح، يسيّر الموردين والقطع، ويحسب المداخيل، مع صلاحيات مختلفة لكل عضو.", fr: "Un système pour ateliers de réparation : reçu à chaque dépôt, suivi des réparations, fournisseurs et pièces, recettes, avec des droits par membre." },
+    shots: ["img/tasli7/home.webp", "img/tasli7/repairs.webp", "img/tasli7/new.webp", "img/tasli7/login.webp"],
+    tech: ["Node.js", "Express", "PostgreSQL", "Android WebView", "Render"],
+    info: { ar: ["تطبيق أندرويد", "تجربة مجانية 10 أيام", "يعمل حتى بدون إنترنت"], fr: ["App Android", "Essai gratuit 10 jours", "Fonctionne hors ligne"] },
+    name: { ar: "تصليح Tasli7", fr: "Tasli7" },
+    short: { ar: "سيّر محل تصليح الهواتف من هاتفك، من الاستلام إلى التسليم.", fr: "Gérez votre atelier de réparation depuis votre téléphone." },
+    long: { ar: "تطبيق لأصحاب محلات تصليح الهواتف: أنشئ محلك وجرّبه 10 أيام مجاناً، سجّل كل جهاز بوصل عند استلامه، تابع حالة كل إصلاح، سيّر الموردين والقطع، واحسب مداخيلك وأرباحك، مع حساب وصلاحيات لكل عامل.", fr: "Pour les ateliers de réparation de téléphones : créez votre boutique et essayez 10 jours gratuitement, un reçu pour chaque appareil, suivi des réparations, fournisseurs et pièces, recettes et bénéfices, avec un compte et des droits par employé." },
     feats: {
-      ar: ["وصل جديد عند استلام كل جهاز", "بحث برقم الوصل أو هاتف الزبون أو IMEI", "متابعة حالة كل تصليح", "تسيير الموردين والقطع", "الحسابات والمداخيل", "صلاحيات مختلفة لكل عضو"],
-      fr: ["Reçu à chaque dépôt d'appareil", "Recherche par reçu, téléphone ou IMEI", "Suivi de chaque réparation", "Fournisseurs et pièces", "Comptes et recettes", "Droits par membre"]
+      ar: ["أنشئ محلك وجرّبه 10 أيام مجاناً", "وصل جديد عند استلام كل جهاز", "بحث برقم الوصل أو هاتف الزبون أو IMEI", "متابعة حالة كل إصلاح", "تسيير الموردين والقطع", "المداخيل والأرباح", "يعمل حتى عند انقطاع الإنترنت", "حساب وصلاحيات لكل عامل"],
+      fr: ["Créez votre boutique, 10 jours gratuits", "Un reçu pour chaque appareil", "Recherche par reçu, téléphone ou IMEI", "Suivi de chaque réparation", "Fournisseurs et pièces", "Recettes et bénéfices", "Fonctionne même sans Internet", "Compte et droits par employé"]
     }
   }
 ];
