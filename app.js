@@ -368,6 +368,7 @@
     applyText(); renderWork();
     if (!$("#detail").hidden) { const id = (location.hash || "").slice(1) || PAGE_APP; const a = byId(id); a && renderDetail(a); }
     if (!$("#modal").hidden) { collect(); renderModal(); }
+    document.dispatchEvent(new CustomEvent("langchange", { detail: l }));
   }
 
   applyText(); renderWork(); floating(); parallax(); route();

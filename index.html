@@ -24,13 +24,18 @@
 <link rel="apple-touch-icon" href="img/icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Alexandria:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="styles.css">
-<link rel="preload" as="image" href="img/zad/home.webp" type="image/webp">
+<link rel="stylesheet" href="fx.css">
+<link rel="preload" as="image" href="img/portrait-1200.webp" type="image/webp">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Aissa CH", "url": "https://aissachking.github.io/aissa-ch/", "image": "https://aissachking.github.io/aissa-ch/img/og.jpg", "jobTitle": ["مطور تطبيقات ومواقع", "مصور فوتوغرافي", "مصلح هواتف"], "address": {"@type": "PostalAddress", "addressLocality": "Ghardaïa", "addressCountry": "DZ"}, "telephone": "+213668069475"}</script>
 </head>
 <body>
 <a class="skip" href="#work" id="skip">تخطَّ إلى الأعمال</a>
+<div class="fx-loader" aria-hidden="true">
+  <img src="img/emblem.webp" alt="" width="128" height="107">
+  <div><div class="fx-count latin" id="fxCount">0</div><div class="fx-lbar"><i id="fxBar"></i></div></div>
+</div>
 <div class="ambient" aria-hidden="true"><i></i><i></i><i></i></div>
 
 <header class="nav gutter" id="nav">
@@ -72,22 +77,71 @@
 </div>
 
 <main id="main">
-  <section class="hero gutter" id="top">
-    <div class="wrap hero-grid">
+  <section class="fx-hero" id="top">
+    <div class="fx-frame" aria-hidden="true"></div>
+    <div class="fx-word" aria-hidden="true"><div class="fx-w latin" id="heroWord">AISSACH</div></div>
+    <i class="fx-orb s" data-d="40" style="width:14px;height:14px;top:24%;left:14%"></i><i class="fx-orb b" data-d="-30" style="width:110px;height:110px;top:58%;left:8%"></i><i class="fx-orb s" data-d="-50" style="width:10px;height:10px;top:34%;left:84%"></i><i class="fx-orb b" data-d="25" style="width:140px;height:140px;top:16%;left:72%"></i><i class="fx-orb s" data-d="60" style="width:20px;height:20px;top:66%;left:88%"></i>
+    <div class="fx-portrait"><div class="fx-ptilt" id="ptilt"><img src="img/portrait-1200.webp" srcset="img/portrait-700.webp 572w, img/portrait-1200.webp 981w" sizes="(max-width:760px) 60vw, 680px" alt="Aissa CH" width="981" height="1200" fetchpriority="high"></div></div>
+    <div class="fx-hint latin" aria-hidden="true">SCROLL ↓</div>
+    <div class="fx-hb">
       <div class="hero-text">
         <span class="eyebrow" data-t="place">غرداية · الجزائر</span>
         <h1 id="h1">من الفكرة<br><em>إلى تطبيق في يدك</em></h1>
-        <p class="intro" data-t="lead">أصمّم تطبيقات أندرويد ومواقع ويب عربية تحلّ مشاكل حقيقية: للمسلم في صلاته، للطفل في قراءته، وللتاجر والفريق في عمله.</p>
         <div class="ctas" id="heroCtas">
           <a class="btn gold" href="#work"><span data-t="cta">اكتشف التطبيقات</span><svg class="fl" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
           <button class="btn glass" type="button" data-request="">اطلب خدمة</button>
         </div>
-        <div class="who"><img src="img/avatar.webp" alt="" width="48" height="48"><div><b>Aissa CH</b><small class="type" id="type">Developer</small></div></div>
       </div>
-      <div class="stage" id="stage" aria-hidden="true"><div class="rig" id="rig"><div class="halo"></div>
-      <div class="p-c"><div class="ph"><div class="scr done"><span class="url">darli-dz.netlify.app</span><img src="img/darli/home.webp" alt="دارلي DARLI DZ — 1" decoding="async" onload="this.classList.add('ok');this.parentNode.classList.add('done')" onerror="this.parentNode.classList.add('done')" class="ok"></div></div></div>
-      <div class="p-b"><div class="ph"><div class="scr done"><img src="img/rehlat/home.webp" alt="رحلة القارئ — 1" decoding="async" onload="this.classList.add('ok');this.parentNode.classList.add('done')" onerror="this.parentNode.classList.add('done')" class="ok"></div></div></div>
-      <div class="p-a"><div class="ph"><div class="scr done"><img src="img/zad/home.webp" alt="زاد المسلم — 1" decoding="async" onload="this.classList.add('ok');this.parentNode.classList.add('done')" onerror="this.parentNode.classList.add('done')" class="ok"></div></div></div></div></div>
+      <div class="who"><img src="img/avatar.webp" alt="" width="48" height="48"><div><b>Aissa CH</b><small class="type" id="type">Developer</small></div></div>
+    </div>
+  </section>
+
+  <div class="fx-marquee" aria-hidden="true"><div class="fx-mskew" id="mskew"><div class="fx-mtrack latin">
+    <span>Developer</span><span>Photographe</span><span>Réparateur de mobile</span><span>Ghardaïa</span>
+    <span>Developer</span><span>Photographe</span><span>Réparateur de mobile</span><span>Ghardaïa</span>
+  </div></div></div>
+
+  <section class="fx-intro gutter"><div class="wrap"><p class="fx-lead" id="lead" data-t="lead">أصمّم تطبيقات أندرويد ومواقع ويب عربية تحلّ مشاكل حقيقية: للمسلم في صلاته، للطفل في قراءته، وللتاجر والفريق في عمله.</p></div></section>
+
+  <section class="fx-show" id="showcase">
+    <div class="fx-wipe" id="sWipe" aria-hidden="true"></div>
+    <div class="fx-frame" aria-hidden="true"></div>
+    <div class="fx-word" aria-hidden="true"><div class="fx-w latin" id="sWord"></div></div>
+    <i class="fx-orb s" data-d="40" style="width:14px;height:14px;top:24%;left:14%"></i><i class="fx-orb b" data-d="-30" style="width:110px;height:110px;top:58%;left:8%"></i><i class="fx-orb s" data-d="-50" style="width:10px;height:10px;top:34%;left:84%"></i><i class="fx-orb b" data-d="25" style="width:140px;height:140px;top:16%;left:72%"></i><i class="fx-orb s" data-d="60" style="width:20px;height:20px;top:66%;left:88%"></i>
+    <div class="fx-pwrap"><div class="fx-pw" id="sPw"><div class="fx-tilt" id="sTilt"><div class="fx-float"><div class="fx-phone"><div><img id="sImg" src="img/zad/home.webp" alt="" decoding="async"></div></div></div></div></div></div>
+    <div class="fx-st"><span class="eyebrow" id="sEy">أعمالي</span><span class="fx-chip" id="sChip"></span></div>
+    <div class="fx-sb">
+      <div class="fx-info">
+        <div class="row"><div class="lg"><img id="sLogo" src="img/zad/logo.webp" alt="" width="56" height="56"></div><h3 id="sName"></h3></div>
+        <p id="sShort"></p>
+        <div class="fx-acts" id="sActs"></div>
+      </div>
+      <div class="fx-sw">
+        <button class="fx-arrow" type="button" id="sPrev"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+        <div class="fx-idx latin" id="sIdx">01 / 06</div>
+        <div class="fx-dots" id="sDots"></div>
+        <button class="fx-arrow" type="button" id="sNext"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="fx-story" id="skills">
+    <div class="fx-stick">
+      <div class="fx-bigbg latin" id="storyBg" aria-hidden="true">CREATE · CAPTURE · REPAIR</div>
+      <div class="fx-glow" aria-hidden="true"></div>
+      <div class="fx-ring" style="width:60vmin;height:60vmin" aria-hidden="true"></div>
+      <div class="fx-ring" style="width:86vmin;height:86vmin" aria-hidden="true"></div>
+      <div class="fx-ring" style="width:116vmin;height:116vmin" aria-hidden="true"></div>
+      <span class="eyebrow fx-story-ey" id="storyEy">ماذا أفعل؟</span>
+      <div class="fx-vis" aria-hidden="true">
+        <div class="fx-v"><div class="stage" id="stage"><div class="rig" id="rig"></div></div></div>
+        <div class="fx-v"><div class="photo"><img src="img/camera-700.webp" alt="" width="700" height="467" loading="lazy"></div></div>
+        <div class="fx-v"><div class="tool"><svg><use href="#i-tool"/></svg></div></div>
+      </div>
+      <div class="fx-feat"><div class="n latin">01</div><h3></h3><p></p></div>
+      <div class="fx-feat"><div class="n latin">02</div><h3></h3><p></p></div>
+      <div class="fx-feat"><div class="n latin">03</div><h3></h3><p></p></div>
+      <div class="fx-prog" aria-hidden="true"><i id="storyProg"></i></div>
     </div>
   </section>
 
@@ -167,6 +221,7 @@
   </section>
 
   <section class="contact gutter" id="contact">
+    <div class="fx-cta-title latin" aria-hidden="true"><span class="row">Let's</span><span class="row">Talk</span></div>
     <div class="wrap cta-card">
       <div>
         <h2 data-t="ctaH">لديك فكرة؟ لنحوّلها إلى مشروع.</h2>
@@ -232,6 +287,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
 <script src="data.js" defer></script>
 <script src="app.js" defer></script>
+<script src="vendor/motion.js" defer></script>
+<script src="fx.js" defer></script>
 <script>if("serviceWorker" in navigator){addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}))}</script>
 </body>
 </html>
